@@ -18,7 +18,7 @@
 
 # Install necessary Packages
 
-list.of.packages <- c("BASS","lhs")
+list.of.packages <- c("BASS","lhs","caTools","Metrics")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
@@ -31,6 +31,9 @@ graphics.off()
 
 library(BASS)
 library(lhs)
+library(caTools)
+library(Metrics)
+
 
 #############################################################################
                       ####Define the toy example####
