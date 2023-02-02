@@ -229,7 +229,7 @@ print(large_sample)
 
 
 #############################################################################
-#### Display the results and save them in a pdf file ###
+      #### Display the results and save them in a pdf file ###
 
 barplot(large_sample, beside = TRUE,cex.axis=0.5,legend= rownames(large_sample),cex.names=0.5, main = "Sensitivity Indices for Large Sample Size",col=c("cornsilk4","red","orange"),ylim = c(0, 0.8))
 pdf(file="Large_sample.pdf",10,6.17)  
